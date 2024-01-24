@@ -18,9 +18,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir('/var/lib/jenkins/workspace/Microservice_Deployment/src/adservice/') {
-                        sh "docker build -t tkibnyusuf/adservice:latest ."
-                        sh "docker push tkibnyusuf/adservice:latest"
-                        sh "docker rmi tkibnyusuf/adservice:latest"
+                        sh "docker build -t haywise/adservice:latest ."
+                        sh "docker push haywise/adservice:latest"
+                        sh "docker rmi haywise/adservice:latest"
                     }
                 }
             }
@@ -31,9 +31,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/cartservice/src/") {
-                        sh "docker build -t tkibnyusuf/cartservice:latest ."
-                        sh "docker push tkibnyusuf/cartservice:latest"
-                        sh "docker rmi tkibnyusuf/cartservice:latest"
+                        sh "docker build -t haywise/cartservice:latest ."
+                        sh "docker push haywise/cartservice:latest"
+                        sh "docker rmi haywise/cartservice:latest"
                     }
                 }
             }
@@ -44,9 +44,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/checkoutservice/") {
-                        sh "docker build -t tkibnyusuf/checkoutservice:latest ."
-                        sh "docker push tkibnyusuf/checkoutservice:latest"
-                        sh "docker rmi tkibnyusuf/checkoutservice:latest"
+                        sh "docker build -t haywise/checkoutservice:latest ."
+                        sh "docker push haywise/checkoutservice:latest"
+                        sh "docker rmi haywise/checkoutservice:latest"
                     }
                 }
             }
@@ -57,9 +57,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/currencyservice/") {
-                        sh "docker build -t tkibnyusuf/currencyservice:latest ."
-                        sh "docker push tkibnyusuf/currencyservice:latest"
-                        sh "docker rmi tkibnyusuf/currencyservice:latest"
+                        sh "docker build -t haywise/currencyservice:latest ."
+                        sh "docker push haywise/currencyservice:latest"
+                        sh "docker rmi haywise/currencyservice:latest"
                     }
                 }
             }
@@ -71,9 +71,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/emailservice/") {
-                        sh "docker build -t tkibnyusuf/emailservice:latest ."
-                        sh "docker push tkibnyusuf/emailservice:latest"
-                        sh "docker rmi tkibnyusuf/emailservice:latest"
+                        sh "docker build -t haywise/emailservice:latest ."
+                        sh "docker push haywise/emailservice:latest"
+                        sh "docker rmi haywise/emailservice:latest"
                     }
                 }
             }
@@ -84,9 +84,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/frontend/") {
-                        sh "docker build -t tkibnyusuf/frontend:latest ."
-                        sh "docker push tkibnyusuf/frontend:latest"
-                        sh "docker rmi tkibnyusuf/frontend:latest"
+                        sh "docker build -t haywise/frontend:latest ."
+                        sh "docker push haywise/frontend:latest"
+                        sh "docker rmi haywise/frontend:latest"
                     }
                 }
             }
@@ -97,9 +97,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/loadgenerator/") {
-                        sh "docker build -t tkibnyusuf/loadgenerator:latest ."
-                        sh "docker push tkibnyusuf/loadgenerator:latest"
-                        sh "docker rmi tkibnyusuf/loadgenerator:latest"
+                        sh "docker build -t haywise/loadgenerator:latest ."
+                        sh "docker push haywise/loadgenerator:latest"
+                        sh "docker rmi haywise/loadgenerator:latest"
                     }
                 }
             }
@@ -110,9 +110,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/paymentservice/") {
-                        sh "docker build -t tkibnyusuf/paymentservice:latest ."
-                        sh "docker push tkibnyusuf/paymentservice:latest"
-                        sh "docker rmi tkibnyusuf/paymentservice:latest"
+                        sh "docker build -t haywise/paymentservice:latest ."
+                        sh "docker push haywise/paymentservice:latest"
+                        sh "docker rmi haywise/paymentservice:latest"
                     }
                 }
             }
@@ -123,9 +123,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/productcatalogservice/") {
-                        sh "docker build -t tkibnyusuf/productcatalogservice:latest ."
-                        sh "docker push tkibnyusuf/productcatalogservice:latest"
-                        sh "docker rmi tkibnyusuf/productcatalogservice:latest"
+                        sh "docker build -t haywise/productcatalogservice:latest ."
+                        sh "docker push haywise/productcatalogservice:latest"
+                        sh "docker rmi haywise/productcatalogservice:latest"
                     }
                 }
             }
@@ -136,9 +136,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/recommendationservice/") {
-                        sh "docker build -t tkibnyusuf/recommendationservice:latest ."
-                        sh "docker push tkibnyusuf/recommendationservice:latest"
-                        sh "docker rmi tkibnyusuf/recommendationservice:latest"
+                        sh "docker build -t haywise/recommendationservice:latest ."
+                        sh "docker push haywise/recommendationservice:latest"
+                        sh "docker rmi haywise/recommendationservice:latest"
                     }
                 }
             }
@@ -149,9 +149,9 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
                     dir("/var/lib/jenkins/workspace/Microservice_Deployment/src/shippingservice/") {
-                        sh "docker build -t tkibnyusuf/shippingservice:latest ."
-                        sh "docker push tkibnyusuf/shippingservice:latest"
-                        sh "docker rmi tkibnyusuf/shippingservice:latest"
+                        sh "docker build -t haywise/shippingservice:latest ."
+                        sh "docker push haywise/shippingservice:latest"
+                        sh "docker rmi haywise/shippingservice:latest"
                     }
                 }
             }
